@@ -6,7 +6,6 @@ before_script:
 script: tiddlywiki ./*wiki --build
 
 after_success:
-  - bash chmod ugo+x ./publish.sh
   - bash ./publish.sh
 
 branches:
